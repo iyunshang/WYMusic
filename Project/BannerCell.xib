@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Gqb-nZ-iKL">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMF-Nu-Vig">
+                        <rect key="frame" x="10" y="35" width="336" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主播电台排行榜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLu-nu-LWI">
+                                <rect key="frame" x="0.0" y="0.0" width="119" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-d0-x9D">
+                                <rect key="frame" x="121" y="0.0" width="20.5" height="20.5"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最火的电视节目，每天更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTy-h5-oAL">
+                                <rect key="frame" x="0.0" y="21" width="168" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rTy-h5-oAL" secondAttribute="bottom" id="1I3-2b-x3y"/>
+                            <constraint firstItem="rTy-h5-oAL" firstAttribute="leading" secondItem="wMF-Nu-Vig" secondAttribute="leading" id="9vt-ew-vAt"/>
+                            <constraint firstItem="hLu-nu-LWI" firstAttribute="leading" secondItem="wMF-Nu-Vig" secondAttribute="leading" id="A5I-F3-Wf1"/>
+                            <constraint firstItem="IGm-d0-x9D" firstAttribute="width" secondItem="hLu-nu-LWI" secondAttribute="height" id="c1T-lb-E1Z"/>
+                            <constraint firstItem="IGm-d0-x9D" firstAttribute="leading" secondItem="hLu-nu-LWI" secondAttribute="trailing" constant="2" id="c6m-3C-ezg"/>
+                            <constraint firstItem="hLu-nu-LWI" firstAttribute="top" secondItem="wMF-Nu-Vig" secondAttribute="top" id="e5k-Us-gcQ"/>
+                            <constraint firstItem="IGm-d0-x9D" firstAttribute="height" secondItem="hLu-nu-LWI" secondAttribute="height" id="hAz-ci-uyB"/>
+                            <constraint firstItem="IGm-d0-x9D" firstAttribute="top" secondItem="wMF-Nu-Vig" secondAttribute="top" id="kYc-dr-mVs"/>
+                            <constraint firstAttribute="height" constant="38" id="yH4-9J-L2n"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nbl-ad-34p">
+                        <rect key="frame" x="356" y="10" width="87" height="87"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="wMF-Nu-Vig" firstAttribute="leading" secondItem="Gqb-nZ-iKL" secondAttribute="leading" constant="10" id="5jn-Q8-gDd"/>
+                <constraint firstItem="Nbl-ad-34p" firstAttribute="width" secondItem="Gqb-nZ-iKL" secondAttribute="height" constant="-20" id="GLa-Ua-WQo"/>
+                <constraint firstItem="Nbl-ad-34p" firstAttribute="leading" secondItem="wMF-Nu-Vig" secondAttribute="trailing" constant="10" id="RDL-ma-lgD"/>
+                <constraint firstItem="wMF-Nu-Vig" firstAttribute="centerY" secondItem="Gqb-nZ-iKL" secondAttribute="centerY" id="ci0-c7-nW6"/>
+                <constraint firstItem="Nbl-ad-34p" firstAttribute="centerY" secondItem="Gqb-nZ-iKL" secondAttribute="centerY" id="hl8-lQ-RF5"/>
+                <constraint firstAttribute="trailing" secondItem="Nbl-ad-34p" secondAttribute="trailing" constant="10" id="snE-Xn-3OF"/>
+                <constraint firstItem="Nbl-ad-34p" firstAttribute="height" secondItem="Gqb-nZ-iKL" secondAttribute="height" constant="-20" id="uln-UE-YOm"/>
+            </constraints>
+            <size key="customSize" width="453" height="107"/>
+            <point key="canvasLocation" x="283.5" y="279.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

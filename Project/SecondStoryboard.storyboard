@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="vHd-6v-kLu">
+            <objects>
+                <viewController id="1OJ-qF-eus" customClass="FMNavigationController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h2u-5N-VAF"/>
+                        <viewControllerLayoutGuide type="bottom" id="fCV-1x-AYX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KLl-tl-tuR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="J1e-QV-FtZ">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="U8Y-jJ-Vi4">
+                            <rect key="frame" x="231" y="7" width="138" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M80-Xi-dCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="1016"/>
+        </scene>
+        <!--MusciName-->
+        <scene sceneID="Q1F-p2-u6u">
+            <objects>
+                <viewController id="P5R-wg-drZ" customClass="PlayNavigationController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="snv-58-xWl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Frp-Ey-hbd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Elf-Fs-Jva">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MusciName" id="jf8-h2-7GJ">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="jU8-uC-13K">
+                            <connections>
+                                <action selector="BackAction:" destination="P5R-wg-drZ" id="5jB-HD-fcK"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="9T0-gN-u3u"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="loN-au-2K5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="363"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hev-z1-gy3">
+            <objects>
+                <navigationController storyboardIdentifier="PlayNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="OAS-Jf-Z9p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l4Q-rs-Jqy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="P5R-wg-drZ" kind="relationship" relationship="rootViewController" id="KBs-GW-mGd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRm-kd-pk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="363"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qbm-xs-0v1">
+            <objects>
+                <navigationController storyboardIdentifier="FMNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="RCQ-CV-NYL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CPA-IQ-IDx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1OJ-qF-eus" kind="relationship" relationship="rootViewController" id="Sgl-RQ-HKb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0LB-Hq-RSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="1016"/>
+        </scene>
+    </scenes>
+</document>

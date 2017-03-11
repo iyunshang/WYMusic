@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicCell" customModule="Project" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MusicCell" id="F7B-ek-Wiv" customClass="MusicCell" customModule="Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="124" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCm-pe-nTk">
+                        <rect key="frame" x="0.0" y="127" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O8K-W0-oTY">
+                        <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
+                        <color key="backgroundColor" red="1" green="0.44782416609999998" blue="0.4252171877" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="xCm-pe-nTk" firstAttribute="leading" secondItem="F7B-ek-Wiv" secondAttribute="leading" id="FjH-FI-lZD"/>
+                <constraint firstItem="O8K-W0-oTY" firstAttribute="top" secondItem="F7B-ek-Wiv" secondAttribute="top" id="IWW-xK-OtO"/>
+                <constraint firstItem="xCm-pe-nTk" firstAttribute="top" secondItem="O8K-W0-oTY" secondAttribute="bottom" constant="3" id="U7V-NH-sZQ"/>
+                <constraint firstItem="O8K-W0-oTY" firstAttribute="height" secondItem="F7B-ek-Wiv" secondAttribute="width" id="Whm-LA-5d9"/>
+                <constraint firstItem="O8K-W0-oTY" firstAttribute="centerX" secondItem="F7B-ek-Wiv" secondAttribute="centerX" id="cfH-Uz-sow"/>
+                <constraint firstItem="O8K-W0-oTY" firstAttribute="width" secondItem="F7B-ek-Wiv" secondAttribute="width" id="dg4-bO-4YC"/>
+            </constraints>
+            <size key="customSize" width="124" height="149"/>
+            <point key="canvasLocation" x="390" y="493.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RProgrameRecTableViewInCell" id="ny3-o7-kiU">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="398"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="398"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ENM-M9-u5A" customClass="RProgrameRecTableView" customModule="Project" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="398"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="ENM-M9-u5A" firstAttribute="centerX" secondItem="ny3-o7-kiU" secondAttribute="centerX" id="3eH-ao-Blh"/>
+                <constraint firstItem="ENM-M9-u5A" firstAttribute="height" secondItem="ny3-o7-kiU" secondAttribute="height" id="QlD-G8-5xy"/>
+                <constraint firstItem="ENM-M9-u5A" firstAttribute="centerY" secondItem="ny3-o7-kiU" secondAttribute="centerY" id="iX7-z3-vKu"/>
+                <constraint firstItem="ENM-M9-u5A" firstAttribute="width" secondItem="ny3-o7-kiU" secondAttribute="width" id="xhL-Wl-r11"/>
+            </constraints>
+            <size key="customSize" width="342" height="398"/>
+            <point key="canvasLocation" x="251" y="375"/>
+        </collectionViewCell>
+    </objects>
+</document>

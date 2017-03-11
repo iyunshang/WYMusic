@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayMusic" customModule="Project" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="vNX-Mb-Xdd" id="AcK-fy-eTm"/>
+                <outlet property="musicCoverImageView" destination="dTC-0p-s5o" id="ug6-VD-jdC"/>
+                <outlet property="topView" destination="c4x-v7-FNN" id="Obo-yQ-jQC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlayMusic" customModule="Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0022" translatesAutoresizingMaskIntoConstraints="NO" id="dTC-0p-s5o">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNX-Mb-Xdd">
+                    <rect key="frame" x="0.0" y="500" width="600" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="sR2-5b-4dL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="c4x-v7-FNN">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="490"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vNX-Mb-Xdd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0W9-Qr-ULG"/>
+                <constraint firstAttribute="bottom" secondItem="vNX-Mb-Xdd" secondAttribute="bottom" constant="10" id="1Q6-Vk-Hyg"/>
+                <constraint firstItem="dTC-0p-s5o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VxO-7R-j0K"/>
+                <constraint firstAttribute="trailing" secondItem="vNX-Mb-Xdd" secondAttribute="trailing" id="ZQ5-Ee-4ka"/>
+                <constraint firstAttribute="bottom" secondItem="dTC-0p-s5o" secondAttribute="bottom" id="est-uz-NPD"/>
+                <constraint firstItem="vNX-Mb-Xdd" firstAttribute="top" secondItem="c4x-v7-FNN" secondAttribute="bottom" constant="10" id="jFQ-6t-nqI"/>
+                <constraint firstItem="c4x-v7-FNN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jIf-SJ-duh"/>
+                <constraint firstAttribute="trailing" secondItem="dTC-0p-s5o" secondAttribute="trailing" id="oKc-iP-FoS"/>
+                <constraint firstAttribute="trailing" secondItem="c4x-v7-FNN" secondAttribute="trailing" id="rkB-KF-sMb"/>
+                <constraint firstItem="c4x-v7-FNN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="x6X-WA-1Mq"/>
+                <constraint firstItem="dTC-0p-s5o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="x7K-jl-X9c"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMG_0022" width="640" height="1136"/>
+    </resources>
+</document>
